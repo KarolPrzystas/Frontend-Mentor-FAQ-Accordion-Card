@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    background: linear-gradient(hsl(273, 75%, 66%),  hsl(240, 73%, 65%) )
+    ;
+    height: 100vh;
+   width:100%;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+   transition: all 0.5 ease-in;
+}
+.box-content{
+    border-radius: 20px;
+    width: 50rem;
+    height: fit-content;
+    margin: 7rem auto;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.first-cont{
+    width: 50%;
+position: static;
+display: flex;
+flex-direction: row;
+overflow: hidden;
+height: 30rem;
+
+}
+.first-cont img {
+    overflow:visible;
+}
+.first-cont img:nth-child(1){
+    width: 10.5rem;
+height: 10rem;
+position: absolute;
+top:44%;
+left: -110px;
+overflow: visible;
+
+
+}
+.first-cont img:nth-child(2){
+    width: 110%;
+height: 60%;
+
+margin: 6.7rem 0 0 -4rem ;
+
+
+
+}
+.first-cont img:nth-child(3){
+display: none;
+
+
+
+}
+
+
+.second-cont{
+    width: 50%;
+    overflow: hidden;
+    padding: 2.5rem  6rem 0 3rem;
+}
+.second-cont h1{
+    
+ font-size: 28px;
+ font-weight: 700;
+    
+ 
+}
+.pytania {
+    text-align:left;
+    margin-top: 2rem; 
+    height: fit-content;
+    
+}
+
+.pytodpbox {
+    display: flex;
+    flex-direction:column;
+    
+    
+   
+}
+
+.tournerdanslavide {
+   
+    display: flex;
+    background-color: transparent;
+    flex-direction: row-reverse;
+    border-bottom: .3px solid rgb(226, 221, 221);
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.tournerdanslavide h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+.tournerdanslavide h4:hover {
+    color:hsl(14, 88%, 65%);
+}
+.iconlevide {
+   
+    font-size: 1.3rem;
+  
+}
+
+.tournerdanslavide p {
+    margin-top: 0.3rem;
+    display: none;
+     margin-bottom: 1.3rem;
+}
+
+
+.tournerdanslavide.open p {
+    display: block;
+
+}
+.active img{
+   transform: rotate(180deg);
+}
+.notactive img{
+    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        margin: 0;
+        background: linear-gradient(hsl(273, 75%, 66%),  hsl(240, 73%, 65%) );
+        padding: 0;
+        height: 100vh;
+       width:100%;
+        font-size: 12px;
+        font-family: 'Kumbh Sans', sans-serif;
+       transition: all 0.5 ease-in-out;
+       overflow-y: hidden;
+       overflow-x: hidden;
+       overflow-block:initial;
+       overscroll-behavior: smooth;
+
+    }
+    .box-content{
+        
+        border-radius: 20px;
+        width: 80%;
+        height: fit-content;
+        margin: 9rem auto;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        position: static;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .first-cont{
+        width: 100%;
+        height: 50%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+
+    }
+    .first-cont img {
+        overflow:visible;
+    }
+    .first-cont img:nth-child(1){
+        width: 6.5rem;
+        z-index: 1;
+    height: 6rem;
+    position: absolute;
+    top:13.5%;
+    left: 50px;
+    overflow: visible;
+
+    
+    
+    }
+    .first-cont img:nth-child(2){
+        width: 80%;
+    height: 60%;
+    position: relative;
+    margin: -6.5rem auto 5rem auto;
+    
+    
+    
+    }
+    .first-cont img:nth-child(3){
+display: block;
+width: 80%;
+height: 60%;
+opacity: 45%;
+margin: -9.5rem auto 1rem auto;
+
+    
+    }
+    .second-cont{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        padding: 0rem;
+    }
+    .second-cont h1{
+        
+     font-size: 28px;
+     font-weight: 700;
+        
+     
+    }
+    .attribution{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .second-cont h1{
+    
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        
+       }
+       .pytania {
+           text-align:left;
+           margin-top: 2rem; 
+           height: fit-content;
+           padding: 2rem;
+       }
+       
+       .pytodpbox {
+           display: flex;
+           flex-direction:column;
+           
+           
+          
+       }
+       
+       .tournerdanslavide {
+          
+           display: flex;
+           background-color: transparent;
+           flex-direction: row-reverse;
+           border-bottom: .3px solid rgb(226, 221, 221);
+           justify-content: space-between;
+           align-items: baseline;
+       
+       }
+       
+       .tournerdanslavide h4 {
+           font-size: 14px;
+           font-weight: 400;
+          
+       }
+       .tournerdanslavide h4:hover {
+           color:hsl(14, 88%, 65%);
+       }
+       .iconlevide {
+          
+           font-size: 1.3rem;
+         
+       }
+       
+       .tournerdanslavide p {
+           margin-top: 0.3rem;
+           display: none;
+            margin-bottom: 1.3rem;
+       }
+       
+       
+       .tournerdanslavide.open p {
+           display: block;
+       
+       }
+       .active img{
+          transform: rotate(180deg);
+       }
+       .notactive img{
+           transform: rotate(360deg);
+       }
+}
